@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of all element in an array</title>
+</head>
+<style>
+    body{
+        background-color:black;
+    }
+</style>
+<body>
+    <script>
+
+        let b= prompt("enter space separated integers")
+        let k= b.split(" ").map(Number)
+        let summ=0
+        for (let i = 0;i<k.length;i++){
+            summ+=k[i]
+        }
+        alert(`sum of integers inside array: ${summ}`)
+
+    </script>
+</body>
+
+</html>
