@@ -2,24 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sum of all element in an array</title>
+    <title>Summation of Array Elements</title>
 </head>
-
 <body>
+
+    <h2>Summation of Array Elements</h2>
+    <p id="output"></p>
+
     <script>
+        let numbers = [10, 20, 30, 40, 50];
 
-        let b= prompt("enter space separated integers")
-        let k= b.split(" ").map(Number)
-        let sum=0
-        for (let i = 0;i<k.length;i++){
-            sum+=k[i]
+        let sum = 0;
+        
+        for (let i = 0; i < numbers.length; i++) {
+            sum = sum + numbers[i];
         }
-        alert(sum)
 
+
+        document.getElementById("output").innerHTML =
+            "Sum of array elements = " + sum;
     </script>
+
 </body>
-
-
 </html>
+
 
